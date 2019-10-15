@@ -14,7 +14,7 @@ target_link_libraries(${PROJECT_NAME}
     PRIVATE
         Qt5::Widgets
         albert::lib
-        muparser
+        -L/usr/local/lib muparser
         xdg
 )
 

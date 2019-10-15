@@ -397,7 +397,7 @@ bool QmlBoxModel::MainWindow::event(QEvent *event) {
 }
 
 
-#ifdef Q_OS_LINUX
+# if defined(Q_OS_LINUX) || defined (Q_OS_FREEBSD)
 /** ****************************************************************************
  * @brief MainWidget::nativeEvent
  *

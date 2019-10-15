@@ -17,7 +17,7 @@ target_link_libraries(${PROJECT_NAME}
         Qt5::Widgets
         Qt5::X11Extras
         albert::lib
-        Xext
+        -L/usr/local/lib Xext
 )
 
 install(TARGETS ${PROJECT_NAME} LIBRARY DESTINATION ${CMAKE_INSTALL_LIBDIR}/albert/plugins)
